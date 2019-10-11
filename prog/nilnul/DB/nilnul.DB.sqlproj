@@ -57,8 +57,15 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="nilnul" />
+    <Folder Include="nilnul\obj" />
+    <Folder Include="nilnul\obj\note" />
+    <Folder Include="nilnul\obj\attr" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="nilnul\Schema1.sql" />
+    <Build Include="nilnul\obj\Table1.sql" />
+    <Build Include="nilnul\obj\Schema1.sql" />
+    <Build Include="nilnul\obj\note\Table1.sql" />
+    <Build Include="nilnul\obj\attr\Table1.sql" />
   </ItemGroup>
 </Project>
