@@ -60,6 +60,8 @@
     <Folder Include="nilnul\obj" />
     <Folder Include="nilnul\obj\note" />
     <Folder Include="nilnul\obj\attr" />
+    <Folder Include="nilnul\obj\note\union" />
+    <Folder Include="nilnul\obj\attr\union" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="nilnul\Schema1.sql" />
@@ -67,5 +69,9 @@
     <Build Include="nilnul\obj\Schema1.sql" />
     <Build Include="nilnul\obj\note\Table1.sql" />
     <Build Include="nilnul\obj\attr\Table1.sql" />
+    <Build Include="nilnul\obj\note\union\View1.sql" />
+    <Build Include="nilnul\obj\note\Schema1.sql" />
+    <Build Include="nilnul\obj\attr\Schema1.sql" />
+    <Build Include="nilnul\obj\attr\union\View1.sql" />
   </ItemGroup>
 </Project>
