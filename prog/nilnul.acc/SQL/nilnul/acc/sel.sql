@@ -1,5 +1,7 @@
-﻿select 
-	top 1000
+﻿select
+	top 
+	1000
 	*
 	from 
-		[nilnul].Acc
+	
+	[nilnul].[Acc]

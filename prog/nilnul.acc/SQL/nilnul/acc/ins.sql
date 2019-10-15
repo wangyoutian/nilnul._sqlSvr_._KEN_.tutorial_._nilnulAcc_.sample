@@ -1,10 +1,14 @@
-﻿insert
-	[nilnul].Acc(
-		[name], pass
-	)
+﻿insert [nilnul].Acc(
+	name
+	,
+	pass
+)
 	output inserted.*
 	values(
-		N'abc'
+		N'sa'
 		,
-		N'123'
+		N'abc@123'
 	)
+;
+go 10
+;

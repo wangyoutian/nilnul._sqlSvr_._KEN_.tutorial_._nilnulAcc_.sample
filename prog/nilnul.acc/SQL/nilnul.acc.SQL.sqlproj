@@ -6,13 +6,13 @@
     <Name>nilnul.acc.SQL</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{f9ac30c9-c9e1-45be-b372-90cc708bd349}</ProjectGuid>
+    <ProjectGuid>{526470aa-c3e1-42ef-a14e-6186400899db}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
-    <RootNamespace>SQL</RootNamespace>
-    <AssemblyName>SQL</AssemblyName>
+    <RootNamespace>acc.SQL</RootNamespace>
+    <AssemblyName>acc.SQL</AssemblyName>
     <ModelCollation>1033, CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
@@ -59,49 +59,21 @@
     <Folder Include="nilnul" />
     <Folder Include="nilnul\acc" />
     <Folder Include="nilnul\acc\name" />
-    <Folder Include="nilnul\acc\name\jo" />
-    <Folder Include="nilnul\acc\name\jo\union" />
-    <Folder Include="nilnul\acc\name\jo\union\vw" />
-    <Folder Include="nilnul\acc\name\jo\vw" />
-    <Folder Include="nilnul\acc\name\jo\union\_sel" />
+    <Folder Include="nilnul\acc\name\union" />
+    <Folder Include="nilnul\acc\name\union\jo_" />
+    <Folder Include="nilnul\acc\name\union\jo_\pass" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nilnul\acc\name\union\jo_\pass\sel.sql" />
+    <None Include="nilnul\acc\ins.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="nilnul\acc\sel.sql" />
-    <None Include="nilnul\acc\name\jo\sel.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="nilnul\acc\ins.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="nilnul\acc\name\sel.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="nilnul\acc\name\ins.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="nilnul\acc\name\jo\union\sel.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="nilnul\acc\name\jo\union\vw\sel.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="nilnul\acc\name\jo\vw\sel.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="nilnul\acc\name\jo\union\_sel\statements.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DB\nilnul.acc.DB.sqlproj">
-      <Name>nilnul.acc.DB</Name>
-      <Project>{9a2d72a0-ee7d-4412-87ce-437fd8f58692}</Project>
-      <Private>True</Private>
-      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
-    </ProjectReference>
-    <ProjectReference Include="..\..\nilnul\DB\nilnul.DB.sqlproj">
-      <Name>nilnul.DB</Name>
-      <Project>{f5c980ff-69e1-476f-be07-6e6e732bfac5}</Project>
-      <Private>True</Private>
-      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
-    </ProjectReference>
   </ItemGroup>
 </Project>

@@ -6,13 +6,13 @@
     <Name>nilnul.acc.DB</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{9a2d72a0-ee7d-4412-87ce-437fd8f58692}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <ProjectGuid>{41af20fb-6efd-463a-a3a9-4b0e01dc6d30}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql100DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
-    <RootNamespace>DB</RootNamespace>
-    <AssemblyName>DB</AssemblyName>
+    <RootNamespace>acc</RootNamespace>
+    <AssemblyName>acc</AssemblyName>
     <ModelCollation>1033, CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
@@ -22,7 +22,6 @@
     <SqlServerVerification>False</SqlServerVerification>
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseSet>True</TargetDatabaseSet>
-    <TargetDatabase>nilnul.acc.DB</TargetDatabase>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -60,22 +59,27 @@
     <Folder Include="nilnul" />
     <Folder Include="nilnul\acc" />
     <Folder Include="nilnul\acc\name" />
+    <Folder Include="nilnul\acc\attr" />
+    <Folder Include="nilnul\acc\attr\join" />
     <Folder Include="nilnul\acc\name\jo" />
-    <Folder Include="nilnul\acc\name\jo\union" />
+    <Folder Include="nilnul\acc\name\union" />
+    <Folder Include="nilnul\acc\name\union\jo_" />
+    <Folder Include="nilnul\acc\name\union\jo_\pass" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="nilnul\acc\Table1.sql" />
     <Build Include="nilnul\acc\name\Table1.sql" />
     <Build Include="nilnul\acc\Schema1.sql" />
-    <Build Include="nilnul\acc\name\jo\union\View1.sql" />
-    <Build Include="nilnul\acc\name\jo\Schema1.sql" />
-    <Build Include="nilnul\acc\name\jo\View1.sql" />
+    <Build Include="nilnul\acc\attr\Table1.sql" />
+    <Build Include="nilnul\acc\name\union\View1.sql" />
     <Build Include="nilnul\acc\name\Schema1.sql" />
+    <Build Include="nilnul\acc\name\union\jo_\Schema1.sql" />
+    <Build Include="nilnul\acc\name\union\jo_\pass\View1.sql" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\nilnul\DB\nilnul.DB.sqlproj">
       <Name>nilnul.DB</Name>
-      <Project>{f5c980ff-69e1-476f-be07-6e6e732bfac5}</Project>
+      <Project>{01aa8e27-24f9-4924-b8d5-da9cb146f48f}</Project>
       <Private>True</Private>
       <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
     </ProjectReference>
