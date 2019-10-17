@@ -3,16 +3,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <Name>nilnul.DB</Name>
+    <Name>nilnul.SQL</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{01aa8e27-24f9-4924-b8d5-da9cb146f48f}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql100DatabaseSchemaProvider</DSP>
+    <ProjectGuid>{a5d1c9dd-4ee8-4b82-9999-97356c21f731}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
-    <RootNamespace>nilnul</RootNamespace>
-    <AssemblyName>nilnul</AssemblyName>
+    <RootNamespace>SQL</RootNamespace>
+    <AssemblyName>SQL</AssemblyName>
     <ModelCollation>1033, CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
@@ -22,6 +22,7 @@
     <SqlServerVerification>False</SqlServerVerification>
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseSet>True</TargetDatabaseSet>
+    <TargetDatabase>nilnul.SQL</TargetDatabase>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -57,8 +58,35 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="nilnul" />
+    <Folder Include="nilnul\obj" />
+    <Folder Include="nilnul\obj\note" />
+    <Folder Include="nilnul\obj\note\union" />
+    <Folder Include="nilnul\obj\note\union\vw" />
+    <Folder Include="nilnul\obj\attr" />
+    <Folder Include="nilnul\obj\attr\vw" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="nilnul\Schema1.sql" />
+    <None Include="nilnul\obj\sel.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nilnul\obj\ins.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nilnul\obj\note\ins.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nilnul\obj\note\sel.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nilnul\obj\note\union\vw\sel.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nilnul\obj\attr\vw\sel.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nilnul\obj\attr\ins.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nilnul\obj\attr\sel.sql" />
   </ItemGroup>
 </Project>

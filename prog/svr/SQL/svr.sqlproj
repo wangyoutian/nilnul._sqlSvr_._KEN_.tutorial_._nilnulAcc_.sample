@@ -3,16 +3,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <Name>nilnul.DB</Name>
+    <Name>svr</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{01aa8e27-24f9-4924-b8d5-da9cb146f48f}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql100DatabaseSchemaProvider</DSP>
+    <ProjectGuid>{d26ddc93-b9b1-4636-b0de-69c047102893}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
-    <RootNamespace>nilnul</RootNamespace>
-    <AssemblyName>nilnul</AssemblyName>
+    <RootNamespace>svr</RootNamespace>
+    <AssemblyName>svr</AssemblyName>
     <ModelCollation>1033, CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
@@ -56,9 +56,17 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
-    <Folder Include="nilnul" />
+    <Folder Include="dbs" />
+    <Folder Include="db_" />
+    <Folder Include="db_\this" />
+    <Folder Include="db_\this\bak_" />
+    <Folder Include="db_\this\restore" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="nilnul\Schema1.sql" />
+    <None Include="dbs\Script1.sql" />
+    <None Include="db_\this\bak_\Script1.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="db_\this\restore\Script1.sql" />
   </ItemGroup>
 </Project>
