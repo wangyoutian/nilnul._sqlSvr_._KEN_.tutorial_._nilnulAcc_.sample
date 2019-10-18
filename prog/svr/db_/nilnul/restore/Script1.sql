@@ -1,3 +1,3 @@
-﻿restore database nilnul
+﻿restore database nilnul1
 	from 
-		disk=N'c:\users\my\info\data\1910101.bak'
+		disk=N'C:\Users\L3M306NJSJ\Downloads\nilnul\data\1910152042.bak'

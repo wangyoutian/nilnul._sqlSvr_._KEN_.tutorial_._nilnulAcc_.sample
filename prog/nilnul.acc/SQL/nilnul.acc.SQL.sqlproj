@@ -62,10 +62,17 @@
     <Folder Include="nilnul\acc\name\union" />
     <Folder Include="nilnul\acc\name\union\jo_" />
     <Folder Include="nilnul\acc\name\union\jo_\pass" />
+    <Folder Include="nilnul\acc\name\NewFolder1\" />
+    <Folder Include="nilnul\acc\name\jo" />
+    <Folder Include="nilnul\acc\name\jo\union" />
+    <Folder Include="nilnul\acc\name\jo\union\_sel" />
+    <Folder Include="nilnul\acc\name\jo\union\vw" />
+    <Folder Include="nilnul\acc\name\jo\vw" />
   </ItemGroup>
   <ItemGroup>
     <None Include="nilnul\acc\name\union\jo_\pass\sel.sql" />
     <None Include="nilnul\acc\ins.sql" />
+    <None Include="nilnul\acc\name\jo\ins.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="nilnul\acc\sel.sql" />
@@ -75,5 +82,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="nilnul\acc\name\ins.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="nilnul\acc\name\jo\union\_sel\statements.sql" />
+    <Build Include="nilnul\acc\name\jo\union\vw\sel.sql" />
+    <Build Include="nilnul\acc\name\jo\union\sel.sql" />
+    <Build Include="nilnul\acc\name\jo\vw\sel.sql" />
+    <None Include="nilnul\acc\name\jo\sel.sql" />
   </ItemGroup>
 </Project>
