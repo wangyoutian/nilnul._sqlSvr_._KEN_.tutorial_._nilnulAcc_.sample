@@ -1,3 +1,3 @@
-﻿backup database nilnul4tutorial
+﻿backup database nilnul
 	to 
-		disk=N'D:\170203\data\nilnul._sqlSvr_\_KEN_(Git\tutorial_\_nilnulAcc_\sample(Git\data\191011.bak'  -- the file must be no-existant such as to be created anew
+		disk=N'C:\Users\L3M306NJSJ\Downloads\nilnul\data\191017.bak'  -- the file must be no-existant such as to be created anew
