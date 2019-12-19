@@ -91,6 +91,12 @@
     <Folder Include="nilnul\acc\trig_" />
     <Folder Include="nilnul\acc\trig_\oldPass" />
     <Folder Include="nilnul\acc\trig_\_oldPass" />
+    <Folder Include="nilnul\_acc" />
+    <Folder Include="nilnul\_acc\reg" />
+    <Folder Include="nilnul\acc\ins_" />
+    <Folder Include="nilnul\acc\ins_\hashPass_" />
+    <Folder Include="nilnul\acc\sel_" />
+    <Folder Include="nilnul\acc\sel_\veriPass_" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="nilnul\acc\Table1.sql" />
@@ -127,6 +133,10 @@
     <Build Include="nilnul\acc\trig_\oldPass\Trigger1.sql" />
     <Build Include="nilnul\acc\trig_\_oldPass\Table1.sql" />
     <Build Include="nilnul\acc\trig_\Schema1.sql" />
+    <Build Include="nilnul\_acc\reg\Table1.sql" />
+    <Build Include="nilnul\_acc\Schema1.sql" />
+    <Build Include="nilnul\acc\ins_\Schema1.sql" />
+    <Build Include="nilnul\acc\ins_\hashPass_\Procedure1.sql" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\nilnul\DB\nilnul.DB.sqlproj">

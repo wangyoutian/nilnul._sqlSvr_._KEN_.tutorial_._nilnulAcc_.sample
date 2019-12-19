@@ -93,6 +93,10 @@
     <Folder Include="nilnul\acc\token\jo" />
     <Folder Include="nilnul\acc\trig_" />
     <Folder Include="nilnul\acc\trig_\_oldPass" />
+    <Folder Include="nilnul\acc\ins_" />
+    <Folder Include="nilnul\acc\ins_\hashPass_" />
+    <Folder Include="nilnul\acc\sel_" />
+    <Folder Include="nilnul\acc\sel_\veriPass_" />
   </ItemGroup>
   <ItemGroup>
     <None Include="nilnul\acc\name\union\jo_\pass\sel.sql" />
@@ -148,6 +152,8 @@
     <None Include="nilnul\acc\token\whereDue.sql" />
     <None Include="nilnul\acc\trig_\_oldPass\sel.sql" />
     <None Include="nilnul\acc\upd.sql" />
+    <None Include="nilnul\acc\ins_\hashPass_\Script1.sql" />
+    <None Include="nilnul\acc\sel_\veriPass_\Script1.sql" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DB\nilnul.acc.DB.sqlproj">

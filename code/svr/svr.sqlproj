@@ -61,14 +61,20 @@
     <Folder Include="db_\nilnul\restore" />
     <Folder Include="db_\nilnul\bak" />
     <Folder Include="db_\nilnul\drop" />
+    <Folder Include="dbs" />
+    <Folder Include="db" />
   </ItemGroup>
   <ItemGroup>
     <None Include="db_\nilnul\restore\Script1.sql" />
+    <None Include="db\rename.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="db_\nilnul\bak\Script1.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="db_\nilnul\drop\Script1.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dbs\Script1.sql" />
   </ItemGroup>
 </Project>

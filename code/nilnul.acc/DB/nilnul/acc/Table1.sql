@@ -4,9 +4,13 @@
 	,
 	[name] nvarchar(4000)  null unique
 	,
-	pass_salt nvarchar(4000) 
+	pass_salt 
+		binary(64) 
+		null
 	,
 	[pass] nvarchar(4000) null
+	,
+	passSaltedHashed binary(64) null
 	,
 	_time datetime default getUtcDate()
 	,

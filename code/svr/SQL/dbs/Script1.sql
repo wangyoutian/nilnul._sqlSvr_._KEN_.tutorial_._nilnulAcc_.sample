@@ -1,4 +1,0 @@
-﻿select 
-	*
-	from 
-		[sys].databases

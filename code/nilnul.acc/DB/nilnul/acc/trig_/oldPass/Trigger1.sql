@@ -8,12 +8,15 @@
 	--INSERT,
 	UPDATE
 	AS
-	BEGIN
-		insert 
-		[nilnul.acc.trig_].[_OldPass]
-			(acc, pass_salt, pass)
-			select id , pass_salt, pass
-			from deleted
-			
-		SET NOCOUNT ON
-	END
+BEGIN
+insert 
+	[nilnul.acc.trig_].[_OldPass]
+		(acc, pass_salt, pass)
+		select d.id, d.pass_salt, d.pass 
+			from deleted  d
+				join inserted i
+					on i.id = d.id
+			where d.pass != i.pass
+
+;	SET NOCOUNT ON
+END
