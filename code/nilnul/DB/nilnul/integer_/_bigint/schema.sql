@@ -1,0 +1,1 @@
+﻿CREATE schema [nilnul.num.integer_._bigint];
