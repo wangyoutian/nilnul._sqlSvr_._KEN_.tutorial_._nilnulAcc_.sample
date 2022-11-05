@@ -58,6 +58,7 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="_this" />
+    <Folder Include="inst" />
   </ItemGroup>
   <ItemGroup>
     <None Include="_this\conn.sql" />
@@ -66,6 +67,12 @@
     <None Include="_this\target.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ver.sql" />
+    <None Include="Copy of ver.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="inst\ver.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="inst\shutdown.sql" />
   </ItemGroup>
 </Project>
