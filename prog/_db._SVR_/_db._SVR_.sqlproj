@@ -76,6 +76,9 @@
     <Folder Include="db\fs\detach\attach_" />
     <Folder Include="db\fs\offline" />
     <Folder Include="dbs" />
+    <Folder Include="db_\my\bak" />
+    <Folder Include="db_" />
+    <Folder Include="db_\my" />
   </ItemGroup>
   <ItemGroup>
     <None Include="_this\conn.sql" />
@@ -150,5 +153,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="dbs\sel.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="db_\my\bak\restore.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="db_\my\bak.sql" />
   </ItemGroup>
 </Project>
