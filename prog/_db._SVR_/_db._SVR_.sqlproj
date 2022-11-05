@@ -118,4 +118,7 @@
   <ItemGroup>
     <None Include="_this\machine\inst.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="db\drop.sql" />
+  </ItemGroup>
 </Project>
