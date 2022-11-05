@@ -66,9 +66,14 @@
     <Folder Include="db\inspect_" />
     <Folder Include="db\alter_" />
     <Folder Include="db\alter_\singleUsr" />
+    <Folder Include="inst\name" />
+    <Folder Include="inst\name\_changed" />
+    <Folder Include="_inst" />
+    <Folder Include="_this\machine" />
   </ItemGroup>
   <ItemGroup>
     <None Include="_this\conn.sql" />
+    <None Include="inst.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="_this\target.sql" />
@@ -88,5 +93,29 @@
   <ItemGroup>
     <None Include="db\alter_\singleUsr\multiUsr.sql" />
     <None Include="db\alter_\singleUsr.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="db\inspect_\files.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="db\inspect_\props.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="inst\collation.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="inst\props.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="inst\name\changed.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="inst\name\_changed\change.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="_this\machine\props.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="_this\machine\inst.sql" />
   </ItemGroup>
 </Project>
