@@ -70,6 +70,11 @@
     <Folder Include="inst\name\_changed" />
     <Folder Include="_inst" />
     <Folder Include="_this\machine" />
+    <Folder Include="db\fs" />
+    <Folder Include="db\fs\bak" />
+    <Folder Include="db\fs\detach" />
+    <Folder Include="db\fs\detach\attach_" />
+    <Folder Include="db\fs\offline" />
   </ItemGroup>
   <ItemGroup>
     <None Include="_this\conn.sql" />
@@ -120,5 +125,26 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="db\drop.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="db\fs\bak.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="db\fs\bak\restore.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="db\fs\detach.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="db\fs\detach\attach.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="db\fs\detach\attach_\bySp.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="db\fs\offline\online.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="db\fs\offline.sql" />
   </ItemGroup>
 </Project>
