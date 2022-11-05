@@ -75,6 +75,7 @@
     <Folder Include="db\fs\detach" />
     <Folder Include="db\fs\detach\attach_" />
     <Folder Include="db\fs\offline" />
+    <Folder Include="dbs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="_this\conn.sql" />
@@ -146,5 +147,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="db\fs\offline.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dbs\sel.sql" />
   </ItemGroup>
 </Project>
