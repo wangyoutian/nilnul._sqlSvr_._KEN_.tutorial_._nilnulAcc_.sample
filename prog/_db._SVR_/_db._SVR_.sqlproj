@@ -83,8 +83,10 @@
     <None Include="db\create.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="db\alter_\singleUsr\multiUsr.sql" />
     <None Include="db\alter_\rename.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="db\alter_\singleUsr\multiUsr.sql" />
     <None Include="db\alter_\singleUsr.sql" />
   </ItemGroup>
 </Project>
