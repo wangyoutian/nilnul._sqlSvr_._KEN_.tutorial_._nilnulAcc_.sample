@@ -61,6 +61,11 @@
     <Folder Include="inst" />
     <Folder Include="inst\stop_" />
     <Folder Include="inst\start_" />
+    <Folder Include="inst_" />
+    <Folder Include="db" />
+    <Folder Include="db\inspect_" />
+    <Folder Include="db\alter_" />
+    <Folder Include="db\alter_\singleUsr" />
   </ItemGroup>
   <ItemGroup>
     <None Include="_this\conn.sql" />
@@ -69,12 +74,21 @@
     <None Include="_this\target.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Copy of ver.sql" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="inst\ver.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="inst\stop_\shutdown.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="db\create.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="db\alter_\rename.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="db\alter_\singleUsr.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="db\alter_\singleUsr\multiUsr.sql" />
   </ItemGroup>
 </Project>
