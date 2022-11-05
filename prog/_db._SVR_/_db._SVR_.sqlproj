@@ -59,6 +59,8 @@
     <Folder Include="Properties" />
     <Folder Include="_this" />
     <Folder Include="inst" />
+    <Folder Include="inst\stop_" />
+    <Folder Include="inst\start_" />
   </ItemGroup>
   <ItemGroup>
     <None Include="_this\conn.sql" />
@@ -73,6 +75,6 @@
     <None Include="inst\ver.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="inst\shutdown.sql" />
+    <None Include="inst\stop_\shutdown.sql" />
   </ItemGroup>
 </Project>
