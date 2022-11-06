@@ -60,13 +60,13 @@
     <Folder Include="nilnul\_acc" />
     <Folder Include="nilnul\_acc\rsc" />
     <Folder Include="nilnul\acc" />
-    <Folder Include="nilnul\acc\descarte_" />
-    <Folder Include="nilnul\acc\descarte_\rsc" />
-    <Folder Include="nilnul\acc\descarte_\rsc\ins_" />
-    <Folder Include="nilnul\acc\descarte_\rsc\ins_\nonxact_" />
-    <Folder Include="nilnul\acc\descarte_\rsc\sel_" />
-    <Folder Include="nilnul\acc\descarte_\rsc\sel_\where" />
-    <Folder Include="nilnul\acc\descarte_\rsc\sel_\where\join_" />
+    <Folder Include="nilnul\acc\cartesian_" />
+    <Folder Include="nilnul\acc\cartesian_\rsc" />
+    <Folder Include="nilnul\acc\cartesian_\rsc\ins_" />
+    <Folder Include="nilnul\acc\cartesian_\rsc\ins_\nonxact_" />
+    <Folder Include="nilnul\acc\cartesian_\rsc\sel_" />
+    <Folder Include="nilnul\acc\cartesian_\rsc\sel_\where" />
+    <Folder Include="nilnul\acc\cartesian_\rsc\sel_\where\join_" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\_DB_\nilnul._acc_._DB_.sqlproj">
@@ -101,21 +101,24 @@
     <None Include="nilnul\acc\upd.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="nilnul\acc\descarte_\rsc\ins_\nonxact_\xpn.sql" />
+    <None Include="nilnul\acc\cartesian_\rsc\ins_\nonxact_\xpn.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="nilnul\acc\descarte_\rsc\ins_\nonxact.sql" />
+    <None Include="nilnul\acc\cartesian_\rsc\ins_\nonxact.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="nilnul\acc\descarte_\rsc\sel.sql" />
+    <None Include="nilnul\acc\cartesian_\rsc\sel.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="nilnul\acc\descarte_\rsc\sel_\where.sql" />
+    <None Include="nilnul\acc\cartesian_\rsc\sel_\where.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="nilnul\acc\descarte_\rsc\sel_\where\join.sql" />
+    <None Include="nilnul\acc\cartesian_\rsc\sel_\where\join.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="nilnul\acc\descarte_\rsc\sel_\where\join_\outer.sql" />
+    <None Include="nilnul\acc\cartesian_\rsc\sel_\where\join_\outer.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nilnul\acc\cartesian_\rsc\ins_\xact.sql" />
   </ItemGroup>
 </Project>
