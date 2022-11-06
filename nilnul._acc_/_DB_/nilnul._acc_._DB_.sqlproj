@@ -22,6 +22,7 @@
     <SqlServerVerification>False</SqlServerVerification>
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultSchema>nilnul</DefaultSchema>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -56,11 +57,17 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="nilnul" />
+    <Folder Include="nilnul\_acc" />
+    <Folder Include="nilnul\_acc\rsc" />
   </ItemGroup>
   <ItemGroup>
     <ArtifactReference Include="..\..\_nilnul_\_DB_\bin\Debug\_nilnul_._DB_.dacpac">
       <HintPath>..\..\_nilnul_\_DB_\bin\Debug\_nilnul_._DB_.dacpac</HintPath>
       <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
     </ArtifactReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="nilnul\_acc\Schema1.sql" />
   </ItemGroup>
 </Project>
