@@ -3,10 +3,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <Name>_nilnul_._DB_</Name>
+    <Name>nilnul._acc_._DB_</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{5af4cbde-1fc2-4606-8f61-a9eeb3f6a656}</ProjectGuid>
+    <ProjectGuid>{ad62c251-93b1-42a9-b11b-ee7720d84fb4}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql140DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
@@ -22,7 +22,6 @@
     <SqlServerVerification>False</SqlServerVerification>
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseSet>True</TargetDatabaseSet>
-    <DefaultSchema>nilnul</DefaultSchema>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -57,12 +56,11 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
-    <Folder Include="nilnul" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="nilnul\Schema1.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="_nilnul_._DB_.publish.xml" />
+    <ArtifactReference Include="..\..\_nilnul_\_DB_\bin\Debug\_nilnul_._DB_.dacpac">
+      <HintPath>..\..\_nilnul_\_DB_\bin\Debug\_nilnul_._DB_.dacpac</HintPath>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+    </ArtifactReference>
   </ItemGroup>
 </Project>
