@@ -71,4 +71,7 @@
   <ItemGroup>
     <None Include="nilnul\_acc\rsc\ins.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="nilnul\_acc\rsc\upd.sql" />
+  </ItemGroup>
 </Project>
