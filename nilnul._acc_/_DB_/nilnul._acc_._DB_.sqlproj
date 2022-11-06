@@ -63,6 +63,7 @@
     <Folder Include="nilnul\acc" />
     <Folder Include="nilnul\acc\carte_" />
     <Folder Include="nilnul\acc\carte_\rsc" />
+    <Folder Include="nilnul\acc\carte_\rsc\of_" />
   </ItemGroup>
   <ItemGroup>
     <ArtifactReference Include="..\..\_nilnul_\_DB_\bin\Debug\_nilnul_._DB_.dacpac">
@@ -76,6 +77,8 @@
     <Build Include="nilnul\acc\Table1.sql" />
     <Build Include="nilnul\acc\carte_\rsc\View1.sql" />
     <Build Include="nilnul\acc\carte_\Schema1.sql" />
+    <Build Include="nilnul\acc\carte_\rsc\of_\Function2.sql" />
+    <Build Include="nilnul\acc\carte_\rsc\Schema1.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="nilnul._acc_._DB_.publish.xml" />
