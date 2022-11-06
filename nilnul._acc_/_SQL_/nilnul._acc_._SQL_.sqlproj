@@ -64,6 +64,9 @@
     <Folder Include="nilnul\acc\descarte_\rsc" />
     <Folder Include="nilnul\acc\descarte_\rsc\ins_" />
     <Folder Include="nilnul\acc\descarte_\rsc\ins_\nonxact_" />
+    <Folder Include="nilnul\acc\descarte_\rsc\sel_" />
+    <Folder Include="nilnul\acc\descarte_\rsc\sel_\where" />
+    <Folder Include="nilnul\acc\descarte_\rsc\sel_\where\join_" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\_DB_\nilnul._acc_._DB_.sqlproj">
@@ -102,5 +105,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="nilnul\acc\descarte_\rsc\ins_\nonxact.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nilnul\acc\descarte_\rsc\sel.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nilnul\acc\descarte_\rsc\sel_\where.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nilnul\acc\descarte_\rsc\sel_\where\join.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nilnul\acc\descarte_\rsc\sel_\where\join_\outer.sql" />
   </ItemGroup>
 </Project>
