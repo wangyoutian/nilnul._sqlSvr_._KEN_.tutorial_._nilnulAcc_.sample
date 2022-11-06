@@ -4,5 +4,7 @@
 	)
 	output inserted.*
 	values(
-		N'http://nilnul.com'
+		--N'http://nilnul.com'
+		N'http://nilnul.org'
+
 	)
