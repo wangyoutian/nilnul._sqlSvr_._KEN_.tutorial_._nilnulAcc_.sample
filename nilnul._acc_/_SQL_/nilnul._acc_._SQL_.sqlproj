@@ -67,6 +67,7 @@
     <Folder Include="nilnul\acc\cartesian_\rsc\sel_" />
     <Folder Include="nilnul\acc\cartesian_\rsc\sel_\where" />
     <Folder Include="nilnul\acc\cartesian_\rsc\sel_\where\join_" />
+    <Folder Include="nilnul\acc\cartesian_\rsc\vw" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\_DB_\nilnul._acc_._DB_.sqlproj">
@@ -120,5 +121,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="nilnul\acc\cartesian_\rsc\ins_\xact.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nilnul\acc\cartesian_\rsc\vw\sel.sql" />
   </ItemGroup>
 </Project>
