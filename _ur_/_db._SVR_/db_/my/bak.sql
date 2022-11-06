@@ -9,6 +9,7 @@ declare @bakShield nvarchar(400);
 set @bakShield=N'd:\t\';
 set @bakShield=N'$(slnSpear)\db.bak_\'; --set this in prj properties
 --debug this step to step if you want to make sure it happens as expected
+set @bakShield=N'D:\170203\data\nilnul._sqlSvr_\_KEN_(Git\tutorial_\_nilnulAcc_\sample(Git\_ur_\db.bak_\';
 
 
 declare @bakSpear nvarchar(500);
