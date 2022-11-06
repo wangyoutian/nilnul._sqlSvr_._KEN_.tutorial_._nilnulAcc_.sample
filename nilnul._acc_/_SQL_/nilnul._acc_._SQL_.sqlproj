@@ -77,4 +77,7 @@
   <ItemGroup>
     <None Include="nilnul\_acc\rsc\sel.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="nilnul\_acc\rsc\del.sql" />
+  </ItemGroup>
 </Project>
