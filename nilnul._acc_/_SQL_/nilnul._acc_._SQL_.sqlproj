@@ -59,6 +59,7 @@
     <Folder Include="nilnul" />
     <Folder Include="nilnul\_acc" />
     <Folder Include="nilnul\_acc\rsc" />
+    <Folder Include="nilnul\acc" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\_DB_\nilnul._acc_._DB_.sqlproj">
@@ -79,5 +80,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="nilnul\_acc\rsc\del.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nilnul\acc\del.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nilnul\acc\ins.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nilnul\acc\sel.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nilnul\acc\upd.sql" />
   </ItemGroup>
 </Project>
