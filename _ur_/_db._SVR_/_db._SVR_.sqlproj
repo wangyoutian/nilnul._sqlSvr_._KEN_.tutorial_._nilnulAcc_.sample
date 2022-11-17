@@ -79,16 +79,10 @@
     <Folder Include="db_\my\bak" />
     <Folder Include="db_" />
     <Folder Include="db_\my" />
-    <Folder Include="inst_\v2017" />
-    <Folder Include="inst\ver" />
-    <Folder Include="inst\ver\upgrade" />
-    <Folder Include="db_\my\bak_" />
-    <Folder Include="db_\my\bak\restore_" />
   </ItemGroup>
   <ItemGroup>
     <None Include="_this\conn.sql" />
     <None Include="inst.sql" />
-    <None Include="inst\ver\upgrade\to2017.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="_this\target.sql" />
@@ -165,12 +159,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="db_\my\bak.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="db_\my\bak_\manual.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="db_\my\bak\restore_\move.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="db_\my\bak\filelist.sql" />

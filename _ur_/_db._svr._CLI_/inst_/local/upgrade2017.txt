@@ -1,0 +1,33 @@
+https://knowledge-base.havit.eu/2018/09/04/sql-localdb-upgrade-to-2017-14-0-1000/#:~:text=The%20easiest%20way%20to%20upgrade%20your%20LocalDB%20instance,Server%20Management%20Studio%20%28RClick%20%2B%20Attach%E2%80%A6%29%206%20Done.
+
+
+
+SQL LocalDB: Upgrade to 2017 (14.0.1000)
+3 Replies
+For me it was quite confusing to find the 2017 version of LocalDB and it is not a streamline process to upgrade your local default instance. The link for ¡°SQL Server 2017 Express LocalDB¡± on official website (https://www.microsoft.com/en-us/sql-server/sql-server-editions-express) leads to ¡°SQLServer2016-SSEI-Expr.exe¡± which runs a SQL Server 2016 with SP2 installer. Now what?
+
+The easiest way to upgrade your LocalDB instance to 2017 is:
+
+Download the LocalDB 2017 installer directly:
+https://download.microsoft.com/download/E/F/2/EF23C21D-7860-4F05-88CE-39AA114B014B/SqlLocalDB.msi
+
+Before running the installer, delete your current MSSQLLocalDB instance:
+sqllocaldb stop MSSQLLocalDB
+sqllocaldb delete MSSQLLocalDB
+
+Run the LocalDB 2017 installer. It will create a new MSSQLLocalDB instance.
+
+[OPTIONAL] If you did not delete the older instance before running the installer, you can delete it now and recreate the instance. It will be created as new version:
+sqllocaldb stop MSSQLLocalDB
+sqllocaldb delete MSSQLLocalDB
+sqllocaldb create MSSQLLocalDB
+
+Now you can re-attach your original databases using SQL Server Management Studio (RClick + Attach¡­)
+
+Done.
+
+
+Credits:
+
+https://stackoverflow.com/questions/42951632/sql-server-express-localdb-msi-offline-installer/42952186#42952186
+Miroslav Louma, HAVIT
