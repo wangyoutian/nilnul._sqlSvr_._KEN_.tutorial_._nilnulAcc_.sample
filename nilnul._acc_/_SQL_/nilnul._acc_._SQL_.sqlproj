@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>nilnul._acc_._SQL_</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{28dbd105-d811-4512-b88e-d870f751fc2d}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql140DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>_SQL_</RootNamespace>
+    <AssemblyName>_SQL_</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="nilnul" />
+    <Folder Include="nilnul\_acc" />
+    <Folder Include="nilnul\_acc\rsc" />
+    <Folder Include="nilnul\acc" />
+    <Folder Include="nilnul\acc\cartesian_" />
+    <Folder Include="nilnul\acc\cartesian_\rsc" />
+    <Folder Include="nilnul\acc\cartesian_\rsc\ins_" />
+    <Folder Include="nilnul\acc\cartesian_\rsc\ins_\nonxact_" />
+    <Folder Include="nilnul\acc\cartesian_\rsc\sel_" />
+    <Folder Include="nilnul\acc\cartesian_\rsc\sel_\where" />
+    <Folder Include="nilnul\acc\cartesian_\rsc\sel_\where\join_" />
+    <Folder Include="nilnul\acc\cartesian_\rsc\vw" />
+    <Folder Include="nilnul\acc\cartesian_\rsc\vw\sel_" />
+    <Folder Include="nilnul\acc\cartesian_\rsc\of_" />
+    <Folder Include="nilnul\acc\cartesian_\rsc\of_\keyword" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\_DB_\nilnul._acc_._DB_.sqlproj">
+      <Name>nilnul._acc_._DB_</Name>
+      <Project>{ad62c251-93b1-42a9-b11b-ee7720d84fb4}</Project>
+      <Private>True</Private>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nilnul\_acc\rsc\ins.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nilnul\_acc\rsc\upd.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nilnul\_acc\rsc\sel.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nilnul\_acc\rsc\del.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nilnul\acc\del.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nilnul\acc\ins.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nilnul\acc\sel.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nilnul\acc\upd.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nilnul\acc\cartesian_\rsc\ins_\nonxact_\xpn.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nilnul\acc\cartesian_\rsc\ins_\nonxact.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nilnul\acc\cartesian_\rsc\sel.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nilnul\acc\cartesian_\rsc\sel_\where.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nilnul\acc\cartesian_\rsc\sel_\where\join.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nilnul\acc\cartesian_\rsc\sel_\where\join_\outer.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nilnul\acc\cartesian_\rsc\ins_\xact.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nilnul\acc\cartesian_\rsc\vw\sel.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nilnul\acc\cartesian_\rsc\vw\sel_\par.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nilnul\acc\cartesian_\rsc\of_\keyword\sel.sql" />
+  </ItemGroup>
+</Project>
